@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .nav {
@@ -25,4 +26,11 @@
   gap: 10px;
   list-style: none;
   font-size: 0.9em;
+  a {
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: var(--dark-font-color-hover);
+    }
+  }
 }
