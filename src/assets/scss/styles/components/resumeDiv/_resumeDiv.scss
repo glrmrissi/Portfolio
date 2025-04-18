@@ -1,4 +1,56 @@
+// If do you look at this, and u don't understand, maybe i'm dumbass. Sorry :O
+
 .resume-section {
-    margin-top: 50px;
-    background-color: rgb(97, 97, 97);
+    position: relative;
+    display: flex;
+    height: 100dvh;
+    background-color: var(--background-dark-mode);
+    overflow: hidden;
+}
+
+.background-resume {
+    position: absolute;
+    top: -20%;
+    left: 22%;
+    filter: brightness(30%);
+    z-index: 1;
+    img {
+        width: 80%;
+    }
+}
+
+.resume-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10vw 0 10vw;
+    z-index: 999;   
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    span {
+        color: var(--title-decals-color)
+    }
+}
+
+.my-image {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    img {
+        position: absolute;
+        filter: brightness(60%) grayscale(100%);
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        user-select: none;
+        pointer-events: none;
+    }
 }

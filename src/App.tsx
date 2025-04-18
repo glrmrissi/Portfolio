@@ -1,16 +1,16 @@
 import "./assets/scss/import.css"
 import Header from "./components/Header/Header";
 import ResumeSection from "./components/ResumeSection/ResumeSection";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
     <>
-      <Header>
+      <Header></Header>
 
-      </Header>
-      <ResumeSection>
-
-      </ResumeSection>
+      <ResumeSection></ResumeSection>
+      
+      <Skills></Skills>
     </>
   );
 }
