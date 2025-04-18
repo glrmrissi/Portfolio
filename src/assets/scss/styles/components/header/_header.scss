@@ -1,0 +1,28 @@
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  position: fixed;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.082);
+  background-position: 100deg;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  min-width: 13%;
+  padding: 6px;
+  margin: 4px 6px 4px 6px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 0.9em;
+}
