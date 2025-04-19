@@ -1,56 +1,61 @@
 // If do you look at this, and u don't understand, maybe i'm dumbass. Sorry :O
 
 .resume-section {
-    position: relative;
-    display: flex;
-    height: 100dvh;
-    background-color: var(--background-dark-mode);
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 100dvh;
+  background-color: var(--background-dark-mode);
+  overflow: hidden;
 }
 
 .background-resume {
-    position: absolute;
-    top: -20%;
-    left: 22%;
-    filter: brightness(30%);
-    z-index: 1;
-    img {
-        width: 80%;
-    }
+  position: absolute;
+  top: -20%;
+  left: 25%;
+  pointer-events: none;
+  user-select: none;
+  filter: brightness(35%);
+  z-index: 1;
+  img {
+    width: 80%;
+  }
 }
 
 .resume-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0 10vw 0 10vw;
-    z-index: 999;   
-    p {
-        font-size: 1.2rem;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 6vw 0 8vw;
+  z-index: 999;
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    span {
-        color: var(--title-decals-color)
-    }
+  font-size: 2.8rem;
+  font-family: "Staatliches", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  span {
+    color: var(--title-decals-color);
+  }
 }
 
 .my-image {
-    position: relative;
-    width: 100%;
-    z-index: 999;
-    img {
-        position: absolute;
-        filter: brightness(60%) grayscale(100%);
-        right: 0px;
-        bottom: 0px;
-        width: 100%;
-        user-select: none;
-        pointer-events: none;
-    }
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  img {
+    position: absolute;
+    filter: brightness(100%) grayscale(100%);
+    right: 0px;
+    bottom: 0px;
+    width: 95%;
+    user-select: none;
+    pointer-events: none;
+  }
 }

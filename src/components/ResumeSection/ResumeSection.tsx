@@ -11,18 +11,32 @@ const ResumeSection = () => {
               Guilher
               <span>me</span>
             </h2>
-            <h2 className="title">Rissi<span>.</span></h2>
+            <h2 className="title">
+              Rissi<span>.</span>
+            </h2>
             <p>
-              Olá, meu nome é Guilherme Rissi, atualmente estou estudando e
-              aplicando em prática .NET, ASP.NET e React usando TypeScript.
+              &nbsp; Desenvolvedor em formação com 2 anos e meio de estudos autônomos
+              em programação, com foco em toda a parte do desenvolvimento web e
+              software. Buscando a minha primeira oportunidade como estagiário
+              na área de desenvolvimento para aplicar todos os meus
+              conhecimentos em prática e evoluir junto a uma equipe técnica. Ao
+              longo da minha jornada, desenvolvi vários projetos pessoais
+              utilizando tecnologias como C#, ASP.NET, Javascript, SCSS, CSS,
+              HTML e banco de dados relacionais e não relacionais. Conquistei
+              certificados reconhecidos por mérito em um teste presencial
+              aplicado pela minha escola, que avaliava o conhecimento em
+              JavaScript. Fui aprovado nos níveis 1, 2 e 3 — uma certificação
+              concedida a poucas pessoas no estado do Paraná, o que reforça
+              minha dedicação e domínio da linguagem. Tenho projetos pessoais no
+              GitHub para desmonstrar a minha evolução contínua.
             </p>
           </div>
         </div>
         <div className="my-image">
-          <img src={MyPhoto} alt=""/>
+          <img src={MyPhoto} alt="" />
         </div>
         <span className="background-resume">
-            <img src={Rectangle} alt="" />
+          <img src={Rectangle} alt="" />
         </span>
       </section>
     </>
