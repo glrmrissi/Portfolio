@@ -4,7 +4,7 @@ import Rectangle from "../../assets/icons/rectangle.png";
 const ResumeSection = () => {
   return (
     <>
-      <section className="resume-section">
+      <section className="resume-section" id="inicio">
         <div className="resume-details">
           <div>
             <h2 className="title">
