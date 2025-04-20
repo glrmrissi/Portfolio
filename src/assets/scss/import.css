@@ -3,8 +3,10 @@
 :root {
   --background-dark-mode: #121212;
   --background-dark-skills: #101010;
+  --dark-font-color: #fff;
   --dark-font-color-hover: #f23219;
   --title-decals-color: #D1321C;
+  --p: #1a1a1a67;
 }
 
 * {
@@ -61,11 +63,22 @@ a {
   font-size: 0.9em;
 }
 .nav-list a {
-  color: #ffffff;
+  color: var(--dark-font-color);
   transition: all 0.2s ease-in;
 }
 .nav-list a:hover {
   color: var(--dark-font-color-hover);
+}
+
+.nav-link {
+  cursor: pointer;
+}
+.nav-link i {
+  border-radius: 50px;
+  transition: background-color 0.2s padding 0.3s ease-in;
+}
+.nav-link i:hover {
+  padding: 1px;
 }
 
 .resume-section {
@@ -133,8 +146,62 @@ a {
 }
 
 .skills-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10dvh 7dvh;
+  gap: 3px;
   height: 100dvh;
   background-color: var(--background-dark-skills);
   z-index: 9999;
+}
+
+.skills-grid {
+  position: relative;
+  display: flex;
+  background-color: rgb(43, 43, 43);
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.skills-data {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-techs-imgs {
+  display: flex;
+  flex-direction: column;
+  padding: 10dvh;
+  opacity: 1;
+}
+.skills-techs-imgs:hover {
+  opacity: 0;
+}
+
+.skills-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FC1406;
+  background: radial-gradient(circle at left top, rgba(129, 10, 3, 0.8431372549) 0%, rgba(116, 9, 3, 0.568627451) 50%, rgba(109, 8, 2, 0.3019607843) 100%);
+  background-position: left;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  padding: 1rem;
+  transition: 0.3s;
+  transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
+}
+.skills-overlay:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.skills-techs-imgs:hover ~ .skills-overlay {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=import.css.map */

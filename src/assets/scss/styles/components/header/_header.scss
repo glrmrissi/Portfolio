@@ -27,10 +27,21 @@
   list-style: none;
   font-size: 0.9em;
   a {
-    color: #ffffff;
+    color: var(--dark-font-color);
     transition: all 0.2s ease-in;
     &:hover {
       color: var(--dark-font-color-hover);
+    }
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+  i {
+    border-radius: 50px;
+    transition: background-color 0.2s padding 0.3s ease-in;
+    &:hover {
+      padding: 1px;
     }
   }
 }
