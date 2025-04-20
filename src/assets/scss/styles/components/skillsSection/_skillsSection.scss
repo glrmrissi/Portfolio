@@ -1,6 +1,61 @@
 .skills-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10dvh 7dvh;
+    gap: 3px;
     height: 100dvh;
     background-color: var(--background-dark-skills);
     z-index: 9999;
+}
+
+.skills-grid {
+    position: relative;
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+
+}
+
+.skills-data {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-techs-imgs{
+    display: flex;
+    flex-direction: column;
+    padding: 10dvh;
+    opacity: 1;
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.skills-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FC1406;
+    background: radial-gradient(circle at left top,#810a03d7 0%, #74090391 50%, #6d08024d 100%);
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 1rem;
+    transition: 0.3s;
+    transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
+    &:hover {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.skills-techs-imgs:hover ~ .skills-overlay {
+    visibility: visible;
+    opacity: 1;
 }

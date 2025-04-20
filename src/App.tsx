@@ -13,6 +13,7 @@ function App() {
       <ResumeSection></ResumeSection>
       
       <Skills></Skills>
+      
       <TopBtn></TopBtn>
     </>
   );
