@@ -36,12 +36,12 @@
 }
 
 .nav-link {
-  cursor: pointer;
-  i {
+  button {
+    cursor: pointer;
     border-radius: 50px;
+    background-color: #ffffff0e;
+    outline: none;
+    border: none;
     transition: background-color 0.2s padding 0.3s ease-in;
-    &:hover {
-      padding: 1px;
-    }
   }
 }
