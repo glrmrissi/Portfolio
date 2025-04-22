@@ -6,14 +6,14 @@
     padding: 10dvh 7dvh;
     gap: 3px;
     height: 100dvh;
-    background-color: var(--background-dark-skills);
+    background-color: var(--background-main-skills);
     z-index: 9999;
 }
 
 .skills-grid {
     position: relative;
     display: flex;
-    background-color: rgb(43, 43, 43);
+    background-color: var(--background-skills-car);
     flex-direction: column;
     justify-content: center;
     border-radius: 6px;
@@ -22,6 +22,9 @@
 .skills-data {
     display: flex;
     justify-content: center;
+    h3 {
+        color: var(--font-color-main);
+    }
 }
 
 .skills-techs-imgs{
@@ -40,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     background: #0a0100;
-    background: radial-gradient(circle at left top,#350301d7 0%, #20020191 50%, #2202014d 100%);
+    background: radial-gradient(circle at left top, var(--card-hover-1) 0%, var(--card-hover-2) 50%, var(--card-hover-3) 100%);
     background-position: left;
     height: 100%;
     width: 100%;
@@ -52,6 +55,9 @@
     &:hover {
         visibility: visible;
         opacity: 1;
+    }
+    h1 {
+        color: var(--font-color-main);
     }
 }
 

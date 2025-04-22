@@ -1,21 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 [data-theme=light] {
-  --background-dark-mode: #fff;
-  --background-dark-skills: #101010;
-  --dark-font-color: #fff;
-  --dark-font-color-hover: #f23219;
-  --title-decals-color: #d1321c;
-  --p: rgba(26, 26, 26, 0.4039215686);
+  --background-main: #fff;
+  --background-main-skills: #e7e7e7;
+  --background-skills-card: #dddddd;
+  --dark-font-color: #000000;
+  --dark-font-color-hover: #6519f2;
+  --title-decals-color: #5b1cd1;
+  --font-color-main: #000000;
+  --path-rectangle: url("../../assets/icons/rectanglePurple.png");
+  --filter-rectangle: brightness(70%);
+  --card-hover-1: rgba(127, 75, 223, 0.8431372549);
+  --card-hover-2: rgba(119, 66, 204, 0.568627451);
+  --card-hover-3: rgba(144, 109, 224, 0.3019607843);
 }
 
 [data-theme=dark] {
-  --background-dark-mode: #121212;
-  --background-dark-skills: #101010;
+  --background-main: #121212;
+  --background-main-skills: #101010;
+  --background-skills-card: #2b2b2b;
   --dark-font-color: #fff;
   --dark-font-color-hover: #f23219;
   --title-decals-color: #d1321c;
-  --p: rgba(26, 26, 26, 0.4039215686);
+  --font-color-main: #ffffff;
+  --path-rectangle: url("../../assets/icons/rectangle.png");
+  --filter-rectangle: brightness(50%);
+  --card-hover-1: rgba(53, 3, 1, 0.8431372549);
+  --card-hover-2: rgba(32, 2, 1, 0.568627451);
+  --card-hover-3: rgba(34, 2, 1, 0.3019607843);
 }
 
 * {
@@ -37,7 +49,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: var(--font-color-main);
   text-decoration: none;
 }
 
@@ -79,38 +91,39 @@ a {
   color: var(--dark-font-color-hover);
 }
 
-.nav-link {
+.nav-link button {
   cursor: pointer;
-}
-.nav-link i {
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.0549019608);
+  outline: none;
+  border: none;
   transition: background-color 0.2s padding 0.3s ease-in;
-}
-.nav-link i:hover {
-  padding: 1px;
 }
 
 .resume-section {
   position: relative;
   display: flex;
   height: 100dvh;
-  background-color: var(--background-dark-mode);
+  background-color: var(--background-main);
   overflow: hidden;
 }
 
 .background-resume {
   position: absolute;
-  top: -20%;
-  left: 25%;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  filter: brightness(35%);
+  filter: var(--filter-rectangle);
+  background-image: var(--path-rectangle);
+  background-position: center top;
+  background-size: 155%;
+  background-repeat: no-repeat;
   z-index: 1;
-}
-.background-resume img {
-  width: 80%;
 }
 
 .resume-details {
@@ -124,11 +137,13 @@ a {
 }
 .resume-details p {
   font-size: 1.1rem;
+  color: var(--font-color-main);
 }
 
 .title {
   font-size: 2.8rem;
   font-family: "Staatliches", sans-serif;
+  color: var(--font-color-main);
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: italic;
@@ -162,14 +177,14 @@ a {
   padding: 10dvh 7dvh;
   gap: 3px;
   height: 100dvh;
-  background-color: var(--background-dark-skills);
+  background-color: var(--background-main-skills);
   z-index: 9999;
 }
 
 .skills-grid {
   position: relative;
   display: flex;
-  background-color: rgb(43, 43, 43);
+  background-color: var(--background-skills-car);
   flex-direction: column;
   justify-content: center;
   border-radius: 6px;
@@ -178,6 +193,9 @@ a {
 .skills-data {
   display: flex;
   justify-content: center;
+}
+.skills-data h3 {
+  color: var(--font-color-main);
 }
 
 .skills-techs-imgs {
@@ -196,7 +214,7 @@ a {
   flex-direction: column;
   align-items: center;
   background: #0a0100;
-  background: radial-gradient(circle at left top, rgba(53, 3, 1, 0.8431372549) 0%, rgba(32, 2, 1, 0.568627451) 50%, rgba(34, 2, 1, 0.3019607843) 100%);
+  background: radial-gradient(circle at left top, var(--card-hover-1) 0%, var(--card-hover-2) 50%, var(--card-hover-3) 100%);
   background-position: left;
   height: 100%;
   width: 100%;
@@ -209,6 +227,9 @@ a {
 .skills-overlay:hover {
   visibility: visible;
   opacity: 1;
+}
+.skills-overlay h1 {
+  color: var(--font-color-main);
 }
 
 .skills-techs-imgs:hover ~ .skills-overlay {
@@ -267,9 +288,6 @@ a {
     font-size: 1em;
   }
   .background-resume {
-    display: none;
-  }
-  .background-resume img {
     display: none;
   }
   .my-image {

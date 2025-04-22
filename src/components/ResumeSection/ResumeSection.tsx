@@ -1,5 +1,4 @@
 import MyPhoto from "../../assets/icons/me.png";
-import Rectangle from "../../assets/icons/rectangle.png";
 
 const ResumeSection = () => {
   return (
@@ -36,7 +35,6 @@ const ResumeSection = () => {
           <img src={MyPhoto} alt="" />
         </div>
         <span className="background-resume">
-          <img src={Rectangle} alt="" />
         </span>
       </section>
     </>

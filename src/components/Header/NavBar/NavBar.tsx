@@ -3,25 +3,20 @@ import { useRef } from "react";
 const NavBar = () => {
   const btnTheme = useRef<HTMLButtonElement | null>(null);
 
+  const savedTheme = localStorage.getItem("theme");
+  
+  if (savedTheme) {
+    document.body.setAttribute("data-theme", savedTheme);
+  }
+  
   const clickedTheme = () => {
-
     const currentTheme = document.body.getAttribute("data-theme");
     const changeTheme = currentTheme === "light" ? "dark" : "light";
     
     document.body.setAttribute("data-theme", changeTheme);
-    
     localStorage.setItem("theme", changeTheme);
-    
-    themeLocalStorage();
-  }
-  
-  const themeLocalStorage = () => {
-    const savedTheme = localStorage.getItem("theme");
-    
-    // @ts-ignore
-    document.body.setAttribute("data-theme", savedTheme);
-  }
-  
+
+  };
   return (
     <>
       <nav className="nav">
