@@ -1,8 +1,33 @@
-:root {
-    --background-dark-mode: #121212;
-    --background-dark-skills: #101010;
-    --dark-font-color: #fff;
-    --dark-font-color-hover: #f23219;
-    --title-decals-color: #D1321C;
-    --p: #1a1a1a67;
+$mobile-max: 756px;
+$tablet-max: 1024px;
+
+$themes: (
+  dark: (
+    background-dark-mode: #121212,
+    background-dark-skills: #101010,
+    dark-font-color: #fff,
+    dark-font-color-hover: #f23219,
+    title-decals-color: #d1321c,
+    p: #1a1a1a67,
+  ),
+  light: (
+    background-dark-mode: #fff,
+    background-dark-skills: #101010,
+    dark-font-color: #fff,
+    dark-font-color-hover: #f23219,
+    title-decals-color: #d1321c,
+    p: #1a1a1a67,
+  ),
+);
+@mixin theme($theme-name) {
+  @each $key, $value in map-get($themes, $theme-name) {
+    --#{$key}: #{$value};
+  }
+}
+[data-theme="light"] {
+  @include theme(light);
+}
+
+[data-theme="dark"] {
+  @include theme(dark);
 }
