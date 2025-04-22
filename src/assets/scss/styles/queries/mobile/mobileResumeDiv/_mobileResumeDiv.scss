@@ -1,0 +1,25 @@
+@media (min-width: 0px) and (max-width: $mobile-max) {
+    .resume-section {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .resume-details {
+        padding-top: 10dvh;
+        height: 100%;
+        p {
+            font-size: 1em;
+        }
+    }
+    .background-resume {
+        display: none;
+        img {
+            display: none;
+        }
+    }
+    .my-image {
+        display: none;
+      }
+      
+}

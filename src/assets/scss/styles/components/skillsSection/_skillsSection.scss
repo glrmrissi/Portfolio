@@ -1,5 +1,6 @@
 .skills-section {
     display: grid;
+    flex-wrap: nowrap;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 10dvh 7dvh;
@@ -16,7 +17,6 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 6px;
-
 }
 
 .skills-data {
@@ -39,8 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #FC1406;
-    background: radial-gradient(circle at left top,#810a03d7 0%, #74090391 50%, #6d08024d 100%);
+    background: #0a0100;
+    background: radial-gradient(circle at left top,#350301d7 0%, #20020191 50%, #2202014d 100%);
     background-position: left;
     height: 100%;
     width: 100%;
