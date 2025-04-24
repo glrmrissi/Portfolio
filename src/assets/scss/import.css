@@ -237,6 +237,12 @@ a {
   opacity: 1;
 }
 
+.projects-section {
+  display: flex;
+  height: 100dvh;
+  background-color: var(--background-main);
+}
+
 @media (min-width: 0px) and (max-width: 756px) {
   .resume-section {
     display: flex;
