@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import ResumeSection from "./components/ResumeSection/ResumeSection";
 import Skills from "./components/Skills/Skills";
 import TopBtn from "./components/TopBtn/TopBtn";
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <ResumeSection></ResumeSection>
       
       <Skills></Skills>
+
+      <Projects></Projects>
       
       <TopBtn></TopBtn>
     </>
