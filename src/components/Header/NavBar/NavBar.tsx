@@ -43,7 +43,7 @@ const NavBar = () => {
           </li>
           <li className="nav-link">
             <button ref={btnTheme} onClick={clickedTheme}>
-              <i className="bi bi-circle-half"></i>
+              <i className="bi bi-circle-half theme-icon"></i>
             </button>
           </li>
         </ul>

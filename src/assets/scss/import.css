@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+:root {
+  --slider-transition-color: all 0.3s ease;
+  --slider-border-radius: 50%;
+  --slider-container-border: 7px;
+}
+
 [data-theme=light] {
   --background-main: #fff;
   --background-main-skills: #e7e7e7;
@@ -13,6 +19,11 @@
   --card-hover-1: rgba(127, 75, 223, 0.8431372549);
   --card-hover-2: rgba(119, 66, 204, 0.568627451);
   --card-hover-3: rgba(144, 109, 224, 0.3019607843);
+  --slider-border: #080808;
+  --slider-border-hover: #6519f2;
+  --slider-background-btns: #e7e7e7;
+  --slider-background-hover: #ffffff;
+  --fill-color: #000;
 }
 
 [data-theme=dark] {
@@ -28,6 +39,11 @@
   --card-hover-1: rgba(53, 3, 1, 0.8431372549);
   --card-hover-2: rgba(32, 2, 1, 0.568627451);
   --card-hover-3: rgba(34, 2, 1, 0.3019607843);
+  --slider-border: #fff;
+  --slider-border-hover: #f23219;
+  --slider-background-btns: #101010;
+  --slider-background-hover: #1a1a1a;
+  --fill-color: #fff;
 }
 
 * {
@@ -98,6 +114,10 @@ a {
   outline: none;
   border: none;
   transition: background-color 0.2s padding 0.3s ease-in;
+}
+
+.theme-icon {
+  color: var(--fill-color);
 }
 
 .resume-section {
@@ -239,8 +259,108 @@ a {
 
 .projects-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100dvh;
   background-color: var(--background-main);
+}
+
+.embla {
+  width: 50dvw;
+  height: auto;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: 45.4dvh;
+  flex-direction: row;
+  margin-left: -1rem;
+}
+
+.embla__slide {
+  padding-left: 1rem;
+  flex: 0 0 80%;
+  min-width: 0;
+}
+
+.embla__slide__number {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--slider-container-border);
+  border: solid 2px var(--slider-border);
+  height: 100%;
+  overflow: hidden;
+}
+.embla__slide__number img {
+  border-radius: var(--slider-container-border);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.embla__overlay__title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.embla__controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: end;
+}
+
+.embla__dot {
+  background-color: var(--slider-background-btns);
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border: solid 2px var(--slider-border);
+  border-radius: var(--slider-border-radius);
+  transition: var(--slider-transition-color);
+  cursor: pointer;
+}
+
+.embla__dot--selected {
+  border: solid 2px var(--slider-border-hover);
+  background-color: var(--slider-background-hover);
+}
+
+.embla__controls {
+  padding-top: 1vh;
+}
+
+.embla__buttons {
+  display: flex;
+}
+
+.embla__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--slider-background-btns);
+  padding: 5px;
+  border: solid 2px var(--slider-border);
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: var(--slider-border-radius);
+  cursor: pointer;
+  transition: var(--slider-transition-color);
+}
+.embla__button path {
+  fill: var(--fill-color);
+}
+.embla__button:hover {
+  background-color: var(--slider-background-hover);
 }
 
 @media (min-width: 0px) and (max-width: 756px) {
