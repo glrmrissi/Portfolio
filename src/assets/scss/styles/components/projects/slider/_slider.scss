@@ -1,0 +1,96 @@
+.embla {
+  width: 50dvw;
+  height: auto;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  height: 45.4dvh;
+  flex-direction: row;
+  margin-left: calc(1rem * -1);
+}
+
+.embla__slide {
+  padding-left: 1rem;
+  flex: 0 0 80%;
+  min-width: 0;
+}
+
+.embla__slide__number {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--slider-container-border);
+  border: solid 2px var(--slider-border);
+  height: 100%;
+  overflow: hidden;
+  img {
+    border-radius: var(--slider-container-border);
+    object-fit: cover;
+  }
+}
+
+.embla__overlay__title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.embla__controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: end;
+}
+
+.embla__dot {
+  background-color: var(--slider-background-btns);
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border: solid 2px var(--slider-border);
+  border-radius: var(--slider-border-radius);
+  transition: var(--slider-transition-color);
+  cursor: pointer;
+}
+
+.embla__dot--selected {
+  border: solid 2px var(--slider-border-hover);
+  background-color: var(--slider-background-hover);
+}
+
+.embla__controls {
+    padding-top: 1vh;
+}
+
+.embla__buttons {
+  display: flex;
+}
+
+.embla__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--slider-background-btns);
+  padding: 5px;
+  border: solid 2px var(--slider-border);
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: var(--slider-border-radius);
+  cursor: pointer;
+  transition: var(--slider-transition-color);
+  path {
+    fill: var(--fill-color);
+
+  }
+    &:hover {
+      background-color: var(--slider-background-hover);
+    }
+}

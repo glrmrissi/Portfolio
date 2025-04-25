@@ -1,13 +1,17 @@
-import { EmblaCarousel } from "./Slider/Slider";
+import EmblaCarousel  from "./Slider/Slider";
+import { EmblaOptionsType } from 'embla-carousel'
 
 const Projects = () => {
-    return (
-        <>
-            <section className="projects-section">
-                <EmblaCarousel></EmblaCarousel>
-            </section>
-        </>
-    )
-}
+  const OPTIONS: EmblaOptionsType = { loop: true };
+  const SLIDE_COUNT = 5;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+  return (
+    <>
+      <section className="projects-section">
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      </section>
+    </>
+  );
+};
 
 export default Projects;

@@ -1,3 +1,10 @@
+:root {
+  --slider-transition-color: all 0.3s ease;
+  --slider-border-radius: 50%;
+  --slider-container-border: 7px;
+}
+
+
 $mobile-max: 756px;
 $tablet-max: 1024px;
 
@@ -15,6 +22,11 @@ $themes: (
     card-hover-1: #350301d7,
     card-hover-2: #20020191,
     card-hover-3: #2202014d,
+    slider-border: #fff,
+    slider-border-hover: #f23219,
+    slider-background-btns: #101010,
+    slider-background-hover: #1a1a1a,
+    fill-color: #fff,
   ),
   light: (
     background-main: #fff,
@@ -29,6 +41,11 @@ $themes: (
     card-hover-1: #7f4bdfd7,
     card-hover-2: #7742cc91,
     card-hover-3: #906de04d,
+    slider-border: #080808,
+    slider-border-hover: #6519f2,
+    slider-background-btns: #e7e7e7,
+    slider-background-hover: #ffffff,
+    fill-color: #000,
   ),
 );
 @mixin theme($theme-name) {
