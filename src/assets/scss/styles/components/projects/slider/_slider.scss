@@ -26,16 +26,52 @@
   height: 100%;
   overflow: hidden;
   img {
-    border-radius: var(--slider-container-border);
     object-fit: cover;
   }
 }
 
+.embla__overlay__directs {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 2vh;
+  z-index: 999;
+  transition: var(--slider-transition-color);
+  &:hover {
+    backdrop-filter: blur(10px) brightness(50%);
+  }
+  div {
+    display: flex;
+    text-align: center;
+    border-radius: var(--slider-container-border);
+    background-color: var(--slider-background-btns);
+    padding: 7px;
+    transition: var(--slider-transition-color);
+    a{
+      display: flex;
+      gap: 4px;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    &:hover {
+      background-color: var(--slider-background-hover);
+    }
+  }
+}
 .embla__overlay__title {
   position: absolute;
   top: 10px;
   left: 10px;
+  color: var(--font-color-main);
+  transition: var(--slider-transition-color);
+  &:hover {
+    color: var(--dark-font-color-hover);
+  }
 }
+
 
 .embla__controls {
   display: grid;
@@ -44,7 +80,7 @@
 
 .embla__dots {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .embla__dot {
@@ -88,7 +124,6 @@
   transition: var(--slider-transition-color);
   path {
     fill: var(--fill-color);
-
   }
     &:hover {
       background-color: var(--slider-background-hover);
