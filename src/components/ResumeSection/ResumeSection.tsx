@@ -7,11 +7,7 @@ const ResumeSection = () => {
         <div className="resume-details">
           <div>
             <h2 className="title">
-              Guilher
-              <span>me</span>
-            </h2>
-            <h2 className="title">
-              Rissi<span>.</span>
+              Guilher<span>me</span> Rissi<span>.</span>
             </h2>
             <p>
               &nbsp; Desenvolvedor em formação com 2 anos e meio de estudos autônomos
