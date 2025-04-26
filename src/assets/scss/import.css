@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap");
 :root {
   --slider-transition-color: all 0.3s ease;
   --slider-border-radius: 50%;
@@ -21,7 +20,7 @@
   --card-hover-3: rgba(144, 109, 224, 0.3019607843);
   --slider-border: #080808;
   --slider-border-hover: #6519f2;
-  --slider-background-btns: #e7e7e7;
+  --slider-background-btns: #f1f1f1;
   --slider-background-hover: #ffffff;
   --fill-color: #000;
 }
@@ -42,7 +41,7 @@
   --slider-border: #fff;
   --slider-border-hover: #f23219;
   --slider-background-btns: #101010;
-  --slider-background-hover: #1a1a1a;
+  --slider-background-hover: #1d1d1d;
   --fill-color: #fff;
 }
 
@@ -57,7 +56,7 @@ html {
 }
 
 body {
-  font-family: "Funnel Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -296,15 +295,52 @@ a {
   overflow: hidden;
 }
 .embla__slide__number img {
-  border-radius: var(--slider-container-border);
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.embla__overlay__directs {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 2vh;
+  z-index: 999;
+  transition: var(--slider-transition-color);
+}
+.embla__overlay__directs:hover {
+  -webkit-backdrop-filter: blur(10px) brightness(50%);
+          backdrop-filter: blur(10px) brightness(50%);
+}
+.embla__overlay__directs div {
+  display: flex;
+  text-align: center;
+  border-radius: var(--slider-container-border);
+  background-color: var(--slider-background-btns);
+  padding: 7px;
+  transition: var(--slider-transition-color);
+}
+.embla__overlay__directs div a {
+  display: flex;
+  gap: 4px;
+  min-width: 100%;
+  min-height: 100%;
+}
+.embla__overlay__directs div:hover {
+  background-color: var(--slider-background-hover);
 }
 
 .embla__overlay__title {
   position: absolute;
   top: 10px;
   left: 10px;
+  color: var(--font-color-main);
+  transition: var(--slider-transition-color);
+}
+.embla__overlay__title:hover {
+  color: var(--dark-font-color-hover);
 }
 
 .embla__controls {
@@ -314,7 +350,7 @@ a {
 
 .embla__dots {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .embla__dot {
