@@ -156,6 +156,7 @@ a {
   z-index: 999;
 }
 .resume-details p {
+  text-align: justify;
   font-size: 1.1rem;
   color: var(--font-color-main);
 }
