@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap");
 :root {
   --slider-transition-color: all 0.3s ease;
+  --universal-transition-color: all 0.3s ease;
   --slider-border-radius: 50%;
   --slider-container-border: 7px;
 }
@@ -23,6 +24,10 @@
   --slider-background-btns: #f1f1f1;
   --slider-background-hover: #ffffff;
   --fill-color: #000;
+  --fill-color-hover: #6f2ceb;
+  --border-resume-cv: #000;
+  --background-resume-cv: #ececec;
+  --background-resume-cv-hover: #f3f3f3;
 }
 
 [data-theme=dark] {
@@ -43,6 +48,10 @@
   --slider-background-btns: #101010;
   --slider-background-hover: #1d1d1d;
   --fill-color: #fff;
+  --fill-color-hover: #cf3333;
+  --border-resume-cv: #fff;
+  --background-resume-cv: #181818;
+  --background-resume-cv-hover: #252525;
 }
 
 * {
@@ -66,6 +75,14 @@ body {
 a {
   color: var(--font-color-main);
   text-decoration: none;
+}
+
+.theme-icon {
+  color: var(--fill-color);
+  transition: var(--universal-transition-color);
+}
+.theme-icon:hover {
+  color: var(--fill-color-hover);
 }
 
 .header-container {
@@ -113,10 +130,6 @@ a {
   outline: none;
   border: none;
   transition: background-color 0.2s padding 0.3s ease-in;
-}
-
-.theme-icon {
-  color: var(--fill-color);
 }
 
 .resume-section {
@@ -170,6 +183,46 @@ a {
 }
 .title span {
   color: var(--title-decals-color);
+}
+
+.resume-techs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+  gap: 10px;
+}
+.resume-techs i {
+  cursor: pointer;
+}
+
+.resume-cv-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--background-resume-cv);
+  border: solid 1px var(--border-resume-cv);
+  border-radius: var(--slider-container-border);
+  color: var(--dark-font-color);
+  padding: 5px 8px 5px 8px;
+  transition: var(--universal-transition-color);
+}
+.resume-cv-btn p {
+  font-size: 0.8em;
+  color: var(--dark-font-color);
+  transition: var(--universal-transition-color);
+}
+.resume-cv-btn:hover {
+  background-color: var(--background-resume-cv-hover);
+  border-color: var(--dark-font-color-hover);
+}
+.resume-cv-btn:hover p {
+  color: var(--dark-font-color-hover);
+}
+.resume-cv-btn:hover i {
+  color: var(--dark-font-color-hover);
 }
 
 .my-image {
@@ -274,7 +327,7 @@ a {
 
 .embla__container {
   display: flex;
-  height: 45.4dvh;
+  height: 43dvh;
   flex-direction: row;
   margin-left: -1rem;
 }

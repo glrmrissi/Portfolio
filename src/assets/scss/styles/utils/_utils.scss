@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap");
 
 * {
   margin: 0;
@@ -19,6 +19,13 @@ body {
 }
 
 a {
-    color: var(--font-color-main);
-    text-decoration: none;
+  color: var(--font-color-main);
+  text-decoration: none;
+}
+.theme-icon {
+  color: var(--fill-color);
+  transition: var(--universal-transition-color);
+  &:hover {
+    color: var(--fill-color-hover);
   }
+}

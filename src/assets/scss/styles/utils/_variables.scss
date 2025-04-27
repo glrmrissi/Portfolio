@@ -1,9 +1,9 @@
 :root {
   --slider-transition-color: all 0.3s ease;
+  --universal-transition-color: all 0.3s ease;
   --slider-border-radius: 50%;
   --slider-container-border: 7px;
 }
-
 
 $mobile-max: 756px;
 $tablet-max: 1024px;
@@ -27,6 +27,10 @@ $themes: (
     slider-background-btns: #101010,
     slider-background-hover: #1d1d1d,
     fill-color: #fff,
+    fill-color-hover: #cf3333,
+    border-resume-cv: #fff,
+    background-resume-cv: #181818,
+    background-resume-cv-hover: #252525,
   ),
   light: (
     background-main: #fff,
@@ -46,6 +50,10 @@ $themes: (
     slider-background-btns: #f1f1f1,
     slider-background-hover: #ffffff,
     fill-color: #000,
+    fill-color-hover: #6f2ceb,
+    border-resume-cv: #000,
+    background-resume-cv: #ececec, 
+    background-resume-cv-hover: #f3f3f3,
   ),
 );
 @mixin theme($theme-name) {
