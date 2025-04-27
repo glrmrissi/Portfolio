@@ -51,6 +51,46 @@
   }
 }
 
+.resume-techs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+  gap: 10px;
+  i {
+    cursor: pointer;
+  }
+}
+
+.resume-cv-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--background-resume-cv);
+  border: solid 1px var(--border-resume-cv);
+  border-radius: var(--slider-container-border);
+  color: var(--dark-font-color);
+  padding: 5px 8px 5px 8px;
+  transition: var(--universal-transition-color);
+
+  p {
+    font-size: 0.8em;
+    color: var(--dark-font-color);
+    transition: var(--universal-transition-color);
+  }
+  &:hover {
+    background-color: var(--background-resume-cv-hover);
+    border-color: var(--dark-font-color-hover);
+    p {
+      color: var(--dark-font-color-hover);
+    }
+    i {
+      color: var(--dark-font-color-hover);
+    }
+  }
+}
 .my-image {
   position: relative;
   width: 100%;
