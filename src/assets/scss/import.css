@@ -209,7 +209,7 @@ a {
   padding: 5px 8px 5px 8px;
   transition: var(--universal-transition-color);
 }
-.resume-cv-btn p {
+.resume-cv-btn .download-btn {
   font-size: 0.8em;
   color: var(--dark-font-color);
   transition: var(--universal-transition-color);
@@ -218,7 +218,7 @@ a {
   background-color: var(--background-resume-cv-hover);
   border-color: var(--dark-font-color-hover);
 }
-.resume-cv-btn:hover p {
+.resume-cv-btn:hover .download-btn {
   color: var(--dark-font-color-hover);
 }
 .resume-cv-btn:hover i {
@@ -382,6 +382,7 @@ a {
   min-height: 100%;
 }
 .embla__overlay__directs div:hover {
+  padding: 10px;
   background-color: var(--slider-background-hover);
 }
 
@@ -390,10 +391,23 @@ a {
   top: 10px;
   left: 10px;
   color: var(--font-color-main);
-  transition: var(--slider-transition-color);
 }
-.embla__overlay__title:hover {
-  color: var(--dark-font-color-hover);
+
+.embla__overlay__techs {
+  position: absolute;
+  background: transparent;
+  padding: 10px;
+  right: 0px;
+  top: 0px;
+  transition: var(--slider-transition-color);
+  z-index: 999;
+}
+.embla__overlay__techs img {
+  margin: 3px;
+  width: 30px;
+}
+.embla__overlay__techs img:hover {
+  padding: 1px;
 }
 
 .embla__controls {

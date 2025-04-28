@@ -50,13 +50,14 @@
     background-color: var(--slider-background-btns);
     padding: 7px;
     transition: var(--slider-transition-color);
-    a{
+    a {
       display: flex;
       gap: 4px;
       min-width: 100%;
       min-height: 100%;
     }
     &:hover {
+      padding: 10px;
       background-color: var(--slider-background-hover);
     }
   }
@@ -66,12 +67,24 @@
   top: 10px;
   left: 10px;
   color: var(--font-color-main);
-  transition: var(--slider-transition-color);
-  &:hover {
-    color: var(--dark-font-color-hover);
-  }
 }
 
+.embla__overlay__techs {
+  position: absolute;
+  background: transparent;
+  padding: 10px;
+  right: 0px;
+  top: 0px;
+  transition: var(--slider-transition-color);
+  z-index: 999;
+  img {
+    margin: 3px;
+    width: 30px;
+    &:hover {
+      padding: 1px;
+    }
+  }
+}
 
 .embla__controls {
   display: grid;
@@ -101,7 +114,7 @@
 }
 
 .embla__controls {
-    padding-top: 1vh;
+  padding-top: 1vh;
 }
 
 .embla__buttons {
@@ -125,7 +138,7 @@
   path {
     fill: var(--fill-color);
   }
-    &:hover {
-      background-color: var(--slider-background-hover);
-    }
+  &:hover {
+    background-color: var(--slider-background-hover);
+  }
 }

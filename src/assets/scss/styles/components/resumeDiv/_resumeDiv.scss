@@ -75,7 +75,7 @@
   padding: 5px 8px 5px 8px;
   transition: var(--universal-transition-color);
 
-  p {
+  .download-btn {
     font-size: 0.8em;
     color: var(--dark-font-color);
     transition: var(--universal-transition-color);
@@ -83,7 +83,7 @@
   &:hover {
     background-color: var(--background-resume-cv-hover);
     border-color: var(--dark-font-color-hover);
-    p {
+    .download-btn {
       color: var(--dark-font-color-hover);
     }
     i {
