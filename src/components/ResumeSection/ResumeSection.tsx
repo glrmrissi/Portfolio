@@ -1,5 +1,4 @@
 import MyPhoto from "../../assets/icons/me.png";
-import Curriculo from "../../assets/downloads/curriculo.pdf";
 
 const ResumeSection = () => {
   return (
@@ -28,15 +27,15 @@ const ResumeSection = () => {
             </p>
           </div>
           <div className="resume-techs">
-            <a href="" className="resume-cv-btn">
+            <button className="resume-cv-btn">
               <i
                 className="bi bi-arrow-down-square theme-icon"
                 title="Curriculo"
               ></i>
-              <a className="download-btn" href={Curriculo} download>
+              <a className="download-btn" href="../../assets/downloads/curriculo.pdf" download={true}>
                 Download CV
               </a>
-            </a>
+            </button>
             <a href="https://github.com/glrmrissi" target="_blank">
               <i className="bi bi-github theme-icon" title="Github"></i>
             </a>
