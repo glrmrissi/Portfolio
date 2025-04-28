@@ -1,5 +1,10 @@
 import MangaKitsu from "../../../../assets/imgs/sliderImgs/mangaKitsu.png";
 import KitsuSearch from "../../../../assets/imgs/sliderImgs/kitsuSearch.png";
+import HtmlImg from "../../../../assets/icons/techs/html5.svg";
+import CssImg from "../../../../assets/icons/techs/css3.svg";
+import JsImg from "../../../../assets/icons/techs/javascript.svg";
+import ScssImg from "../../../../assets/icons/techs/sass.svg";
+import KitsuImg from "../../../../assets/icons/techs/kitsu.png";
 
 const ContentSlider = () => {
   return (
@@ -8,6 +13,13 @@ const ContentSlider = () => {
         <div className="embla__slide__number">
           <div className="embla__overlay__directs">
             <h1 className="embla__overlay__title">MangaKitsu</h1>
+            <aside className="embla__overlay__techs">
+              <img src={HtmlImg} alt="HTML" title="HTML"/>
+              <img src={CssImg} alt="CSS" title="CSS"/>
+              <img src={JsImg} alt="Javascript" title="Javascript"/>
+              <img src={ScssImg} alt="Scss/Sass" title="Scss/Sass"/>
+              <img src={KitsuImg} alt="KitsuAPI" title="KitsuAPI"/>
+            </aside>
             <div>
               <a href="https://github.com/glrmrissi/mangasKitsu" target="_blank">
                 <i className="bi bi-github theme-icon"></i>
