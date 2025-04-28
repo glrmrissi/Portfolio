@@ -6,7 +6,7 @@
 
 .embla__container {
   display: flex;
-  height: 43dvh;
+  height: 44dvh;
   flex-direction: row;
   margin-left: calc(1rem * -1);
 }
@@ -26,9 +26,13 @@
   height: 100%;
   overflow: hidden;
   img {
-    border-radius: var(--slider-container-border);
     object-fit: cover;
   }
+}
+
+#backend {
+  background-image: var(--slider-background-backend);
+  background-size: cover;
 }
 
 .embla__overlay__directs {
@@ -68,6 +72,7 @@
   img {
     margin: 3px;
     width: 30px;
+    border-radius: 0px;
     &:hover {
       padding: 1px;
     }
@@ -86,6 +91,7 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
+    user-select: none;
   }
 }
 
