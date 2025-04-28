@@ -3,7 +3,7 @@
   --slider-transition-color: all 0.3s ease;
   --universal-transition-color: all 0.3s ease;
   --slider-border-radius: 50%;
-  --slider-container-border: 7px;
+  --slider-container-border: 9px;
 }
 
 [data-theme=light] {
@@ -334,7 +334,7 @@ a {
 
 .embla__slide {
   padding-left: 1rem;
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   min-width: 0;
 }
 
@@ -348,6 +348,7 @@ a {
   overflow: hidden;
 }
 .embla__slide__number img {
+  border-radius: var(--slider-container-border);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -355,6 +356,7 @@ a {
 .embla__overlay__directs {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -367,30 +369,15 @@ a {
   -webkit-backdrop-filter: blur(10px) brightness(50%);
           backdrop-filter: blur(10px) brightness(50%);
 }
-.embla__overlay__directs div {
-  display: flex;
-  text-align: center;
-  border-radius: var(--slider-container-border);
-  background-color: var(--slider-background-btns);
-  padding: 7px;
-  transition: var(--slider-transition-color);
-}
-.embla__overlay__directs div a {
-  display: flex;
-  gap: 4px;
-  min-width: 100%;
-  min-height: 100%;
-}
-.embla__overlay__directs div:hover {
-  padding: 10px;
-  background-color: var(--slider-background-hover);
+.embla__overlay__directs:hover .embla__resume__project {
+  opacity: 100%;
+  visibility: visible;
 }
 
 .embla__overlay__title {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: var(--font-color-main);
 }
 
 .embla__overlay__techs {
@@ -410,9 +397,51 @@ a {
   padding: 1px;
 }
 
+.embla__resume__project {
+  padding: 5vh;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--slider-transition-color);
+  overflow: hidden;
+}
+.embla__resume__project p {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.embla__link__social__medias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 4px;
+  padding: 10px;
+}
+.embla__link__social__medias div {
+  border-radius: var(--slider-container-border);
+  background-color: var(--slider-background-btns);
+  padding: 7px;
+}
+.embla__link__social__medias div a {
+  display: flex;
+  gap: 4px;
+  min-width: 100%;
+  min-height: 100%;
+  transition: var(--slider-transition-color);
+}
+.embla__link__social__medias div:hover {
+  background-color: var(--slider-background-hover);
+}
+.embla__link__social__medias div:hover a {
+  color: var(--dark-font-color-hover);
+}
+
 .embla__controls {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 1vh;
 }
 
 .embla__dots {
@@ -437,10 +466,6 @@ a {
   background-color: var(--slider-background-hover);
 }
 
-.embla__controls {
-  padding-top: 1vh;
-}
-
 .embla__buttons {
   display: flex;
 }
@@ -460,11 +485,15 @@ a {
   cursor: pointer;
   transition: var(--slider-transition-color);
 }
+.embla__button:hover {
+  border-color: var(--fill-color-hover);
+  background-color: var(--slider-background-hover);
+}
+.embla__button:hover path {
+  fill: var(--fill-color-hover);
+}
 .embla__button path {
   fill: var(--fill-color);
-}
-.embla__button:hover {
-  background-color: var(--slider-background-hover);
 }
 
 @media (min-width: 0px) and (max-width: 756px) {
