@@ -13,7 +13,7 @@
 
 .embla__slide {
   padding-left: 1rem;
-  flex: 0 0 80%;
+  flex: 0 0 85%;
   min-width: 0;
 }
 
@@ -26,6 +26,7 @@
   height: 100%;
   overflow: hidden;
   img {
+    border-radius: var(--slider-container-border);
     object-fit: cover;
   }
 }
@@ -33,6 +34,7 @@
 .embla__overlay__directs {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -42,31 +44,17 @@
   transition: var(--slider-transition-color);
   &:hover {
     backdrop-filter: blur(10px) brightness(50%);
-  }
-  div {
-    display: flex;
-    text-align: center;
-    border-radius: var(--slider-container-border);
-    background-color: var(--slider-background-btns);
-    padding: 7px;
-    transition: var(--slider-transition-color);
-    a {
-      display: flex;
-      gap: 4px;
-      min-width: 100%;
-      min-height: 100%;
-    }
-    &:hover {
-      padding: 10px;
-      background-color: var(--slider-background-hover);
+    .embla__resume__project {
+      opacity: 100%;
+      visibility: visible;
     }
   }
 }
+
 .embla__overlay__title {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: var(--font-color-main);
 }
 
 .embla__overlay__techs {
@@ -86,9 +74,51 @@
   }
 }
 
+.embla__resume__project {
+  padding: 5vh;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--slider-transition-color);
+  overflow: hidden;
+  p {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.embla__link__social__medias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 4px;
+  padding: 10px;
+  div {
+    border-radius: var(--slider-container-border);
+    background-color: var(--slider-background-btns);
+    padding: 7px;
+    a {
+      display: flex;
+      gap: 4px;
+      min-width: 100%;
+      min-height: 100%;
+      transition: var(--slider-transition-color);
+    }
+    &:hover {
+      background-color: var(--slider-background-hover);
+      a {
+        color: var(--dark-font-color-hover);
+      }
+    }
+  }
+}
+
 .embla__controls {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 1vh;
 }
 
 .embla__dots {
@@ -113,12 +143,9 @@
   background-color: var(--slider-background-hover);
 }
 
-.embla__controls {
-  padding-top: 1vh;
-}
-
 .embla__buttons {
   display: flex;
+  
 }
 
 .embla__button {
@@ -135,10 +162,14 @@
   border-radius: var(--slider-border-radius);
   cursor: pointer;
   transition: var(--slider-transition-color);
+  &:hover {
+    border-color:  var(--fill-color-hover);
+    background-color: var(--slider-background-hover);
+    path {
+      fill: var(--fill-color-hover);
+    }
+  }
   path {
     fill: var(--fill-color);
-  }
-  &:hover {
-    background-color: var(--slider-background-hover);
   }
 }
