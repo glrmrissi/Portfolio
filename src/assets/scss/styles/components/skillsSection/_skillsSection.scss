@@ -1,67 +1,118 @@
 .skills-section {
-    display: grid;
-    flex-wrap: nowrap;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 10dvh 7dvh;
-    gap: 3px;
-    height: 100dvh;
-    background-color: var(--background-main-skills);
-    z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4dvh 2dvh;
+  height: 100vh;
+  background-color: var(--background-main-skills);
+}
+
+.skills-grid-main {
+  display: grid;
+  flex-wrap: nowrap;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
+}
+
+.skills-title {
+  position: relative;
+  color: var(--dark-font-color);
+  margin: 1vh;
+  transition: 0.3s ease-in-out;
+  cursor: default;
+  &:before {
+    content: "";
+    bottom: 3px;
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    background: var(--dark-font-color-hover);
+  }
+  &:after {
+    content: "";
+    bottom: 3px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--dark-font-color-hover);
+    border-radius: 16px;
+    transform-origin: left;
+    transition: transform 0.3s;
+    transform: scaleX(0);
+  }
+  &:hover {
+    color: var(--dark-font-color-hover);
+    transform-origin: left;
+    transition: 0.3s ease-in-out;
+    &:after {
+      color: var(--dark-font-color-hover);
+      transform-origin: left;
+      transition: transform 0.3s;
+      transform: scaleX(1);
+    }
+  }
 }
 
 .skills-grid {
-    position: relative;
-    display: flex;
-    background-color: var(--background-skills-car);
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 6px;
+  position: relative;
+  display: flex;
+  background-color: var(--background-skills-car);
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
 }
 
 .skills-data {
-    display: flex;
-    justify-content: center;
-    h3 {
-        color: var(--font-color-main);
-    }
+  display: flex;
+  justify-content: center;
+  h3 {
+    color: var(--font-color-main);
+  }
 }
 
-.skills-techs-imgs{
-    display: flex;
-    flex-direction: column;
-    padding: 10dvh;
-    opacity: 1;
-    &:hover {
-        opacity: 0;
-    }
+.skills-techs-imgs {
+  display: flex;
+  flex-direction: column;
+  padding: 10dvh;
+  opacity: 1;
+  &:hover {
+    opacity: 0;
+  }
 }
 
 .skills-overlay {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #0a0100;
-    background: radial-gradient(circle at left top, var(--card-hover-1) 0%, var(--card-hover-2) 50%, var(--card-hover-3) 100%);
-    background-position: left;
-    height: 100%;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    padding: 1rem;
-    transition: 0.3s;
-    transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
-    &:hover {
-        visibility: visible;
-        opacity: 1;
-    }
-    h1 {
-        color: var(--font-color-main);
-    }
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0a0100;
+  background: radial-gradient(
+    circle at left top,
+    var(--card-hover-1) 0%,
+    var(--card-hover-2) 50%,
+    var(--card-hover-3) 100%
+  );
+  background-position: left;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  padding: 1rem;
+  transition: 0.3s;
+  transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
+  &:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  h1 {
+    color: var(--font-color-main);
+  }
 }
 
 .skills-techs-imgs:hover ~ .skills-overlay {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
