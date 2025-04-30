@@ -25,14 +25,10 @@ const ContentSlider = () => {
             </aside>
             <article className="embla__resume__project">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae odio nam aspernatur, voluptates ducimus adipisci,
-                ipsa eum molestias sed tempore, sunt quia alias nulla eius
-                porro! Incidunt distinctio earum laborum! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Recusandae odio nam
-                aspernatur, voluptates ducimus adipisci, ipsa eum molestias sed
-                tempore, sunt quia alias nulla eius porro! Incidunt distinctio
-                earum laborum!
+                Este projeto está consumindo a <strong>KitsuAPI</strong> e está
+                sendo feito toda a parte de "streaming". Categorias, trending,
+                searchfilter e paginação. O projeto está atualmente está
+                pausado.
               </p>
             </article>
             <aside className="embla__link__social__medias">
@@ -65,7 +61,9 @@ const ContentSlider = () => {
       <div className="embla__slide">
         <div className="embla__slide__number">
           <div className="embla__overlay__directs">
-            <h1 className="embla__overlay__title">Sistema de busca com KitsuAPI</h1>
+            <h1 className="embla__overlay__title">
+              Sistema de busca com KitsuAPI
+            </h1>
             <aside className="embla__overlay__techs">
               <img src={HtmlImg} alt="HTML" title="HTML" />
               <img src={CssImg} alt="CSS" title="CSS" />
@@ -75,14 +73,10 @@ const ContentSlider = () => {
             </aside>
             <article className="embla__resume__project">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae odio nam aspernatur, voluptates ducimus adipisci,
-                ipsa eum molestias sed tempore, sunt quia alias nulla eius
-                porro! Incidunt distinctio earum laborum! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Recusandae odio nam
-                aspernatur, voluptates ducimus adipisci, ipsa eum molestias sed
-                tempore, sunt quia alias nulla eius porro! Incidunt distinctio
-                earum laborum!
+                Este projeto também está consumindo a <strong>KitsuAPI</strong>,
+                ele foi o meu primeiro projeto consumindo uma api de terceiros.
+                Fiz a parte do seachfilter apenas, este é um projeto mais
+                simples que o anterior.
               </p>
             </article>
             <aside className="embla__link__social__medias">
@@ -123,14 +117,11 @@ const ContentSlider = () => {
             </aside>
             <article className="embla__resume__project">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae odio nam aspernatur, voluptates ducimus adipisci,
-                ipsa eum molestias sed tempore, sunt quia alias nulla eius
-                porro! Incidunt distinctio earum laborum! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Recusandae odio nam
-                aspernatur, voluptates ducimus adipisci, ipsa eum molestias sed
-                tempore, sunt quia alias nulla eius porro! Incidunt distinctio
-                earum laborum!
+                Este projeto foi feito enquanto estava no ensino médio, feito
+                para uma professora de Saúde e bem-estar. A arte é feita com pixel
+                art, no caso eu fiz a forca e tentei deixar tudo no mesmo
+                estilo. Esse projeto me ajudou a entender muito a lógica do
+                Javascript em geral.
               </p>
             </article>
             <aside className="embla__link__social__medias">
@@ -163,29 +154,23 @@ const ContentSlider = () => {
       <div className="embla__slide">
         <div className="embla__slide__number" id="backend">
           <div className="embla__overlay__directs">
-            <h1 className="embla__overlay__title">Minimal API usando ASP.NET</h1>
+            <h1 className="embla__overlay__title">
+              Minimal API usando ASP.NET
+            </h1>
             <aside className="embla__overlay__techs">
               <img src={CSharpImg} alt="C#" title="C#" />
               <img src={DotNetImg} alt=".Net" title=".NET" />
             </aside>
             <article className="embla__resume__project">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae odio nam aspernatur, voluptates ducimus adipisci,
-                ipsa eum molestias sed tempore, sunt quia alias nulla eius
-                porro! Incidunt distinctio earum laborum! Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Recusandae odio nam
-                aspernatur, voluptates ducimus adipisci, ipsa eum molestias sed
-                tempore, sunt quia alias nulla eius porro! Incidunt distinctio
-                earum laborum!
+                Este projeto é uma MinimalAPI, ASP.NET CORE. Feita toda a parte
+                de RestFul e conectado com o banco de dados relacional
+                PostgreSQL. Foi neste projeto que eu me apaixonei pelo ASP.NET.
               </p>
             </article>
             <aside className="embla__link__social__medias">
               <div>
-                <a
-                  href="https://github.com/glrmrissi/StudyAsp"
-                  target="_blank"
-                >
+                <a href="https://github.com/glrmrissi/StudyAsp" target="_blank">
                   <i className="bi bi-github"></i>
                   Code
                 </a>
