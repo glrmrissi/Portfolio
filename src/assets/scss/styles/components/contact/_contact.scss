@@ -1,7 +1,45 @@
 .contact-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100dvh;
+    background-color: var(--background-main);
+}
+
+.form-styled {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 5px;
+    padding: 60px;
+    border-radius: 6px;
+    background-color: var(--background-form-color);
+    border: solid 1px var(--slider-border);
+}
+
+.input {
+    background-color: var(--background-main);
+    color: var(--dark-font-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: solid 1px var(--slider-border);
+    width: 40dvh;
+    height: 4dvh;
+    padding: 6px;
+    transition: color 0.3s ease, backgroundColor 0.3s ease;
+  
+    &::placeholder {
+        color: var(--dark-font-color);
+        opacity: 50%;
+    }
+    &:hover {
+        background-color: var(--button-form-color-hover);
+    }
+    &:focus {
+        background-color: var(--background-main-hover);
+    }
 }

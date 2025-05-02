@@ -11,6 +11,7 @@ $tablet-max: 1024px;
 $themes: (
   dark: (
     background-main: #121212,
+    background-main-hover: #1a1a1a,
     background-main-skills: #101010,
     background-skills-card: #2b2b2b,
     dark-font-color: #fff,
@@ -34,9 +35,12 @@ $themes: (
     border-resume-cv: #fff,
     background-resume-cv: #181818,
     background-resume-cv-hover: #252525,
+    background-form-color: #0b0b0b,
+    button-form-color-hover: #282828,
   ),
   light: (
     background-main: #fff,
+    background-main-hover: #f2f2f2,
     background-main-skills: #e7e7e7,
     background-skills-card: #dddddd,
     dark-font-color: #000000,
@@ -60,6 +64,8 @@ $themes: (
     border-resume-cv: #000,
     background-resume-cv: #ececec,
     background-resume-cv-hover: #f3f3f3,
+    background-form-color: #f3f3f3,
+    button-form-color-hover: #eeeeee,
   ),
 );
 @mixin theme($theme-name) {
