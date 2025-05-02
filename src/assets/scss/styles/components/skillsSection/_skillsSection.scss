@@ -59,7 +59,9 @@
 .skills-grid {
   position: relative;
   display: flex;
+  align-items: center;
   background-color: var(--background-skills-car);
+  color: var(--dark-font-color);
   flex-direction: column;
   justify-content: center;
   border-radius: 6px;
@@ -95,13 +97,12 @@
     var(--card-hover-2) 50%,
     var(--card-hover-3) 100%
   );
-  background-position: left;
+  border-radius: 6px;
   height: 100%;
   width: 100%;
   visibility: hidden;
   opacity: 0;
   padding: 1rem;
-  transition: 0.3s;
   transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
   &:hover {
     visibility: visible;

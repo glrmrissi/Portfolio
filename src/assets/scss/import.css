@@ -169,6 +169,7 @@ a {
   align-items: center;
   width: 100%;
   padding: 0 6vw 0 8vw;
+  font-weight: 400;
   z-index: 999;
 }
 .resume-details p {
@@ -307,7 +308,9 @@ a {
 .skills-grid {
   position: relative;
   display: flex;
+  align-items: center;
   background-color: var(--background-skills-car);
+  color: var(--dark-font-color);
   flex-direction: column;
   justify-content: center;
   border-radius: 6px;
@@ -338,13 +341,12 @@ a {
   align-items: center;
   background: #0a0100;
   background: radial-gradient(circle at left top, var(--card-hover-1) 0%, var(--card-hover-2) 50%, var(--card-hover-3) 100%);
-  background-position: left;
+  border-radius: 6px;
   height: 100%;
   width: 100%;
   visibility: hidden;
   opacity: 0;
   padding: 1rem;
-  transition: 0.3s;
   transition: opacity 0.3s ease, visibility 0.3s ease, all 0.35s ease-in-out;
 }
 .skills-overlay:hover {
