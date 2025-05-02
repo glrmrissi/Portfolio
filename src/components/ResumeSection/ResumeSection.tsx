@@ -16,14 +16,13 @@ const ResumeSection = () => {
               oportunidade como estagiário na área de desenvolvimento para
               aplicar todos os meus conhecimentos em prática e evoluir junto a
               uma equipe técnica. Ao longo da minha jornada, desenvolvi vários
-              projetos pessoais utilizando tecnologias como C#, ASP.NET,
-              Javascript, SCSS, CSS, HTML e banco de dados relacionais e não
+              projetos pessoais utilizando tecnologias como <strong>C#</strong>, <strong>ASP.NET</strong>,<strong> Javascript</strong>, <strong>SCSS</strong>, <strong>CSS</strong>, <strong>HTML</strong> e banco de dados relacionais e não
               relacionais. Conquistei certificados reconhecidos por mérito em um
               teste presencial aplicado pela minha escola, que avaliava o
-              conhecimento em JavaScript. Fui aprovado nos níveis 1, 2 e 3 — uma
+              conhecimento em JavaScript. Fui aprovado nos <strong>níveis 1, 2 e 3</strong> — uma
               certificação concedida a poucas pessoas no estado do Paraná, o que
               reforça minha dedicação e domínio da linguagem. Tenho projetos
-              pessoais no GitHub para desmonstrar a minha evolução contínua.
+              pessoais no <strong>GitHub</strong> para desmonstrar a minha evolução contínua.
             </p>
           </div>
           <div className="resume-techs">

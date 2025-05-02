@@ -24,7 +24,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>HTML5</h1>
-              <p>Meow Meow</p>
+              <p>Nivel: Avançado</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -36,6 +36,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>CSS3</h1>
+              <p>Nivel: Avançado</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -47,6 +48,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>Javascript</h1>
+              <p>Nivel: Avançado</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -58,6 +60,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>NodeJS</h1>
+              <p>Nivel: Avançado</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -69,6 +72,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>Bootstrap</h1>
+              <p>Nivel: Intermediário</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -80,6 +84,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>SCSS/SASS</h1>
+              <p>Nivel: Avançado</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -91,6 +96,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>Git</h1>
+              <p>Nivel: Intermediário</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -102,6 +108,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>C#</h1>
+              <p>Nivel: Intermediário</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -113,6 +120,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>.NET</h1>
+              <p>Nivel: Intermediário</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -124,6 +132,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>React</h1>
+              <p>Nivel: Iniciante</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
@@ -135,6 +144,7 @@ const Skills = () => {
             </div>
             <div className="skills-overlay">
               <h1>Typescript</h1>
+              <p>Nivel: Intermediário</p>
             </div>
           </div>
           <div className="skills-grid" tabIndex={0}>
