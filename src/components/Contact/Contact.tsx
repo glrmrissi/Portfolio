@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <section className="contact-container" id="contact">
-      <h1 className="skills-title">Entre em contato por aqui <i className="bi bi-arrow-down"></i></h1>
+      <h1 className="title-hover">Entre em contato por aqui <i className="bi bi-arrow-down"></i></h1>
       <form className="form-styled" id="form" onSubmit={onSubmit}>
         <h4>Nome:</h4>
         <input className="input" type="text" name="name" placeholder="Enter your name" required/>

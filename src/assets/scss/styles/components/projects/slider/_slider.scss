@@ -26,6 +26,8 @@
   height: 100%;
   overflow: hidden;
   img {
+    user-select: none;
+    pointer-events: none;
     object-fit: cover;
   }
 }
@@ -34,6 +36,7 @@
   background-image: var(--slider-background-backend);
   background-size: cover;
   background-position: center;
+  user-select: none;
 }
 
 .embla__overlay__directs {
@@ -102,22 +105,18 @@
   width: 100%;
   gap: 4px;
   padding: 10px;
-  div {
+  a {
     border-radius: var(--slider-container-border);
     background-color: var(--slider-background-btns);
-    padding: 7px;
-    a {
-      display: flex;
-      gap: 4px;
-      min-width: 100%;
-      min-height: 100%;
-      transition: var(--slider-transition-color);
-    }
+    padding: 7px 10px;
+    gap: 4px;
+    transition: var(--slider-transition-color);
     &:hover {
       background-color: var(--slider-background-hover);
-      a {
-        color: var(--dark-font-color-hover);
-      }
+      color: var(--dark-font-color-hover);
+    }
+    i {
+      padding-right: 3px;
     }
   }
 }
@@ -152,7 +151,6 @@
 
 .embla__buttons {
   display: flex;
-  
 }
 
 .embla__button {
@@ -170,7 +168,7 @@
   cursor: pointer;
   transition: var(--slider-transition-color);
   &:hover {
-    border-color:  var(--fill-color-hover);
+    border-color: var(--fill-color-hover);
     background-color: var(--slider-background-hover);
     path {
       fill: var(--fill-color-hover);
