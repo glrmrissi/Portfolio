@@ -8,6 +8,7 @@
 
 [data-theme=light] {
   --background-main: #fff;
+  --background-main-hover: #f2f2f2;
   --background-main-skills: #e7e7e7;
   --background-skills-card: #dddddd;
   --dark-font-color: #000000;
@@ -30,10 +31,14 @@
   --border-resume-cv: #000;
   --background-resume-cv: #ececec;
   --background-resume-cv-hover: #f3f3f3;
+  --background-form-color: #f3f3f3;
+  --button-form-color-hover: #eeeeee;
+  --background-contact-forms: url("../../assets/imgs/formsImgs/backWhite.png");
 }
 
 [data-theme=dark] {
   --background-main: #121212;
+  --background-main-hover: #1a1a1a;
   --background-main-skills: #101010;
   --background-skills-card: #2b2b2b;
   --dark-font-color: #fff;
@@ -56,6 +61,9 @@
   --border-resume-cv: #fff;
   --background-resume-cv: #181818;
   --background-resume-cv-hover: #252525;
+  --background-form-color: #0b0b0b;
+  --button-form-color-hover: #282828;
+  --background-contact-forms: url("../../assets/imgs/formsImgs/backDark.png");
 }
 
 * {
@@ -559,10 +567,62 @@ a {
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100dvh;
+  background-color: var(--background-main-skills);
+}
+
+.form-styled {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 5px;
+  padding: 60px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background-color: var(--background-form-color);
+  background-image: var(--background-contact-forms);
+  background-position: center center;
+  background-size: cover;
+  border: solid 1px var(--slider-border);
+  color: var(--dark-font-color);
+}
+
+.input {
+  background-color: var(--background-main);
+  color: var(--dark-font-color);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  border: solid 1px var(--slider-border);
+  width: 40vh;
+  height: 4dvh;
+  padding: 6px;
+  transition: color 0.3s ease, backgroundColor 0.3s ease;
+}
+.input::-moz-placeholder {
+  color: var(--dark-font-color);
+  opacity: 50%;
+}
+.input::placeholder {
+  color: var(--dark-font-color);
+  opacity: 50%;
+}
+.input:hover {
+  background-color: var(--button-form-color-hover);
+}
+.input:focus {
+  background-color: var(--background-main-hover);
+}
+
+#formSuccess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 756px) {

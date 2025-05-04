@@ -38,7 +38,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-github"></i>
-                  Code
+                  Código
                 </a>
               </div>
               <div>
@@ -47,7 +47,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-box-arrow-up-right"></i>
-                  On web
+                  Página
                 </a>
               </div>
             </aside>
@@ -86,7 +86,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-github"></i>
-                  Code
+                  Código
                 </a>
               </div>
               <div>
@@ -95,7 +95,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-box-arrow-up-right"></i>
-                  On web
+                  Página
                 </a>
               </div>
             </aside>
@@ -131,7 +131,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-github"></i>
-                  Code
+                  Código
                 </a>
               </div>
               <div>
@@ -140,7 +140,7 @@ const ContentSlider = () => {
                   target="_blank"
                 >
                   <i className="bi bi-box-arrow-up-right"></i>
-                  On web
+                  Página
                 </a>
               </div>
             </aside>
@@ -172,7 +172,7 @@ const ContentSlider = () => {
               <div>
                 <a href="https://github.com/glrmrissi/StudyAsp" target="_blank">
                   <i className="bi bi-github"></i>
-                  Code
+                  Código
                 </a>
               </div>
             </aside>
