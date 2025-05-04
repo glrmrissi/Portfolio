@@ -32,7 +32,6 @@ const ContentSlider = () => {
               </p>
             </article>
             <aside className="embla__link__social__medias">
-              <div>
                 <a
                   href="https://github.com/glrmrissi/mangasKitsu"
                   target="_blank"
@@ -40,8 +39,6 @@ const ContentSlider = () => {
                   <i className="bi bi-github"></i>
                   Código
                 </a>
-              </div>
-              <div>
                 <a
                   href="https://glrmrissi.github.io/mangasKitsu/"
                   target="_blank"
@@ -49,7 +46,6 @@ const ContentSlider = () => {
                   <i className="bi bi-box-arrow-up-right"></i>
                   Página
                 </a>
-              </div>
             </aside>
           </div>
           <img src={MangaKitsu} />
@@ -80,7 +76,6 @@ const ContentSlider = () => {
               </p>
             </article>
             <aside className="embla__link__social__medias">
-              <div>
                 <a
                   href="https://github.com/glrmrissi/KitsuAPIRestFulSearch"
                   target="_blank"
@@ -88,8 +83,6 @@ const ContentSlider = () => {
                   <i className="bi bi-github"></i>
                   Código
                 </a>
-              </div>
-              <div>
                 <a
                   href="https://glrmrissi.github.io/KitsuAPIRestFulSearch/"
                   target="_blank"
@@ -97,7 +90,7 @@ const ContentSlider = () => {
                   <i className="bi bi-box-arrow-up-right"></i>
                   Página
                 </a>
-              </div>
+              
             </aside>
           </div>
           <img src={KitsuSearch} />
@@ -125,7 +118,6 @@ const ContentSlider = () => {
               </p>
             </article>
             <aside className="embla__link__social__medias">
-              <div>
                 <a
                   href="https://github.com/glrmrissi/JogoDaForca"
                   target="_blank"
@@ -133,8 +125,6 @@ const ContentSlider = () => {
                   <i className="bi bi-github"></i>
                   Código
                 </a>
-              </div>
-              <div>
                 <a
                   href="https://glrmrissi.github.io/JogoDaForca/"
                   target="_blank"
@@ -142,7 +132,6 @@ const ContentSlider = () => {
                   <i className="bi bi-box-arrow-up-right"></i>
                   Página
                 </a>
-              </div>
             </aside>
           </div>
           <img src={Forca} />
@@ -169,12 +158,10 @@ const ContentSlider = () => {
               </p>
             </article>
             <aside className="embla__link__social__medias">
-              <div>
                 <a href="https://github.com/glrmrissi/StudyAsp" target="_blank">
                   <i className="bi bi-github"></i>
                   Código
                 </a>
-              </div>
             </aside>
           </div>
         </div>

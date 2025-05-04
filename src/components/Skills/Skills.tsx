@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <>
       <section id="skills" className="skills-section">
-          <h1 className="skills-title">Skills</h1>
+          <h1 className="title-hover">Skills</h1>
         <section className="skills-grid-main">
           <div className="skills-grid" tabIndex={0}>
             <div className="skills-techs-imgs">

@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <section className="projects-section" id="projetos">
-      <h1 className="skills-title">Projetos</h1>
+      <h1 className="title-hover">Projetos</h1>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </section>
     </>
