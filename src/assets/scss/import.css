@@ -33,6 +33,7 @@
   --background-resume-cv-hover: #f3f3f3;
   --background-form-color: #f3f3f3;
   --button-form-color-hover: #eeeeee;
+  --background-contact-forms: url("../../assets/imgs/formsImgs/backWhite.png");
 }
 
 [data-theme=dark] {
@@ -62,6 +63,7 @@
   --background-resume-cv-hover: #252525;
   --background-form-color: #0b0b0b;
   --button-form-color-hover: #282828;
+  --background-contact-forms: url("../../assets/imgs/formsImgs/backDark.png");
 }
 
 * {
@@ -570,7 +572,7 @@ a {
   align-items: center;
   width: 100%;
   height: 100dvh;
-  background-color: var(--background-main);
+  background-color: var(--background-main-skills);
 }
 
 .form-styled {
@@ -580,9 +582,14 @@ a {
   text-align: left;
   gap: 5px;
   padding: 60px;
-  border-radius: 6px;
+  margin-top: 10px;
+  border-radius: 12px;
   background-color: var(--background-form-color);
+  background-image: var(--background-contact-forms);
+  background-position: center center;
+  background-size: cover;
   border: solid 1px var(--slider-border);
+  color: var(--dark-font-color);
 }
 
 .input {
@@ -592,7 +599,7 @@ a {
   outline: none;
   border-radius: 6px;
   border: solid 1px var(--slider-border);
-  width: 40dvh;
+  width: 40vh;
   height: 4dvh;
   padding: 6px;
   transition: color 0.3s ease, backgroundColor 0.3s ease;
@@ -610,6 +617,12 @@ a {
 }
 .input:focus {
   background-color: var(--background-main-hover);
+}
+
+#formSuccess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 756px) {

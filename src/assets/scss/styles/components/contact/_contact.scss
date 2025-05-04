@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     height: 100dvh;
-    background-color: var(--background-main);
+    background-color: var(--background-main-skills);
 }
 
 .form-styled {
@@ -15,9 +15,14 @@
     text-align: left;
     gap: 5px;
     padding: 60px;
-    border-radius: 6px;
+    margin-top: 10px;
+    border-radius: 12px;
     background-color: var(--background-form-color);
+    background-image: var(--background-contact-forms);
+    background-position: center center;
+    background-size: cover;
     border: solid 1px var(--slider-border);
+    color: var(--dark-font-color);
 }
 
 .input {
@@ -27,7 +32,7 @@
     outline: none;
     border-radius: 6px;
     border: solid 1px var(--slider-border);
-    width: 40dvh;
+    width: 40vh;
     height: 4dvh;
     padding: 6px;
     transition: color 0.3s ease, backgroundColor 0.3s ease;
@@ -42,4 +47,10 @@
     &:focus {
         background-color: var(--background-main-hover);
     }
+}
+
+#formSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

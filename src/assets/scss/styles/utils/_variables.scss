@@ -28,8 +28,7 @@ $themes: (
     slider-border-hover: #f23219,
     slider-background-btns: #101010,
     slider-background-hover: #1d1d1d,
-    slider-background-backend:
-      url("../../assets/imgs/sliderImgs/backend1.png"),
+    slider-background-backend: url("../../assets/imgs/sliderImgs/backend1.png"),
     fill-color: #fff,
     fill-color-hover: #cf3333,
     border-resume-cv: #fff,
@@ -37,6 +36,7 @@ $themes: (
     background-resume-cv-hover: #252525,
     background-form-color: #0b0b0b,
     button-form-color-hover: #282828,
+    background-contact-forms: url("../../assets/imgs/formsImgs/backDark.png"),
   ),
   light: (
     background-main: #fff,
@@ -57,8 +57,7 @@ $themes: (
     slider-border-hover: #6519f2,
     slider-background-btns: #f1f1f1,
     slider-background-hover: #ffffff,
-    slider-background-backend:
-      url("../../assets/imgs/sliderImgs/backend2.png"),
+    slider-background-backend: url("../../assets/imgs/sliderImgs/backend2.png"),
     fill-color: #000,
     fill-color-hover: #6f2ceb,
     border-resume-cv: #000,
@@ -66,6 +65,7 @@ $themes: (
     background-resume-cv-hover: #f3f3f3,
     background-form-color: #f3f3f3,
     button-form-color-hover: #eeeeee,
+    background-contact-forms: url("../../assets/imgs/formsImgs/backWhite.png"),
   ),
 );
 @mixin theme($theme-name) {
