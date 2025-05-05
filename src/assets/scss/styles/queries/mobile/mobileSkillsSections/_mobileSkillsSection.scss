@@ -1,12 +1,15 @@
 @media (min-width: 0px) and (max-width: $mobile-max) {
     .skills-section {
-        display: grid;
-        flex-wrap: nowrap;
-        grid-template-columns: repeat(2, 1fr);
         height: 100%;
     }
     .skills-techs-imgs {
         padding: 2.5dvh;
         width: 100%;
+    }
+    .skills-grid-main {
+        display: grid;
+        flex-wrap: nowrap;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 }

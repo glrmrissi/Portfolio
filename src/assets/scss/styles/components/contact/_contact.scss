@@ -32,7 +32,8 @@
     outline: none;
     border-radius: 6px;
     border: solid 1px var(--slider-border);
-    width: 40vh;
+    min-width: 25vw;
+    max-width: 100%;
     height: 4dvh;
     padding: 6px;
     transition: color 0.3s ease, backgroundColor 0.3s ease;
