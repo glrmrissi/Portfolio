@@ -1,57 +1,118 @@
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100dvh;
-    background-color: var(--background-main-skills);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--background-main-skills);
 }
 
 .form-styled {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    gap: 5px;
-    padding: 60px;
-    margin-top: 10px;
-    border-radius: 12px;
-    background-color: var(--background-form-color);
-    background-image: var(--background-contact-forms);
-    background-position: center center;
-    background-size: cover;
-    border: solid 1px var(--slider-border);
-    color: var(--dark-font-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 5px;
+  padding: 60px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background-color: var(--background-form-color);
+  background-image: var(--background-contact-forms);
+  background-position: center center;
+  background-size: cover;
+  border: solid 1px var(--slider-border);
+  color: var(--dark-font-color);
+  transition: 0.3s all;
+  &:hover {
+    .drop {
+        margin: -4px;
+    }
+  }
 }
 
 .input {
-    background-color: var(--background-main);
+  background-color: var(--background-main);
+  color: var(--dark-font-color);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  border: solid 1px var(--slider-border);
+  min-width: 25vw;
+  max-width: 100%;
+  height: 4dvh;
+  padding: 6px;
+  transition: color 0.3s ease, backgroundColor 0.3s ease;
+
+  &::placeholder {
     color: var(--dark-font-color);
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    border: solid 1px var(--slider-border);
-    min-width: 25vw;
-    max-width: 100%;
-    height: 4dvh;
-    padding: 6px;
-    transition: color 0.3s ease, backgroundColor 0.3s ease;
-  
-    &::placeholder {
-        color: var(--dark-font-color);
-        opacity: 50%;
-    }
-    &:hover {
-        background-color: var(--button-form-color-hover);
-    }
-    &:focus {
-        background-color: var(--background-main-hover);
-    }
+    opacity: 50%;
+  }
+  &:hover {
+    background-color: var(--button-form-color-hover);
+  }
+  &:focus {
+    background-color: var(--background-main-hover);
+  }
 }
 
 #formSuccess {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  background: var(--background-form-drops);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid var(--slider-border);
+  border-top: 1px solid var(--slider-border);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+
+  &-1 {
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    left: -40px;
+}
+
+&-2 {
+    height: 80px;
+    width: 80px;
+    bottom: -30px;
+    right: -10px;
+  }
+
+  &-3 {
+    height: 100px;
+    width: 100px;
+    bottom: 120px;
+    right: -60px;
+  }
+
+  &-4 {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    right: -60px;
+  }
+
+  &-5 {
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    left: -30px;
+  }
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

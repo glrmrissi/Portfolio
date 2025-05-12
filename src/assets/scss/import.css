@@ -33,6 +33,7 @@
   --background-resume-cv-hover: #f3f3f3;
   --background-form-color: #f3f3f3;
   --button-form-color-hover: #eeeeee;
+  --background-form-drops: rgba(255, 255, 255, 0.0196078431);
   --background-contact-forms: url("../../assets/imgs/formsImgs/backWhite.png");
   --wave-color: #5b1cd1;
   --wave-color-2: #4615a1;
@@ -65,6 +66,7 @@
   --background-resume-cv-hover: #252525;
   --background-form-color: #0b0b0b;
   --button-form-color-hover: #282828;
+  --background-form-drops: rgba(14, 14, 14, 0.0666666667);
   --background-contact-forms: url("../../assets/imgs/formsImgs/backDark.png");
   --wave-color: #d11c1c;
   --wave-color-2: #9b1010;
@@ -618,6 +620,7 @@ a {
 }
 
 .form-styled {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -632,6 +635,10 @@ a {
   background-size: cover;
   border: solid 1px var(--slider-border);
   color: var(--dark-font-color);
+  transition: 0.3s all;
+}
+.form-styled:hover .drop {
+  margin: -4px;
 }
 
 .input {
@@ -666,6 +673,56 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.drop {
+  background: var(--background-form-drops);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid var(--slider-border);
+  border-top: 1px solid var(--slider-border);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+.drop-1 {
+  height: 80px;
+  width: 80px;
+  top: -20px;
+  left: -40px;
+}
+.drop-2 {
+  height: 80px;
+  width: 80px;
+  bottom: -30px;
+  right: -10px;
+}
+.drop-3 {
+  height: 100px;
+  width: 100px;
+  bottom: 120px;
+  right: -60px;
+}
+.drop-4 {
+  height: 120px;
+  width: 120px;
+  top: -60px;
+  right: -60px;
+}
+.drop-5 {
+  height: 60px;
+  width: 60px;
+  bottom: 20px;
+  left: -30px;
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 @media (min-width: 0px) and (max-width: 756px) {
@@ -753,5 +810,10 @@ a {
   .skills-techs-imgs {
     padding: 2.5dvh;
     width: 100%;
+  }
+}
+@media (min-width: 756px) and (max-width: 1024px) {
+  .drop {
+    display: none;
   }
 }/*# sourceMappingURL=import.css.map */
