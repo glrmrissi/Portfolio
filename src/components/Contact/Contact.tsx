@@ -23,25 +23,55 @@ const Contact = () => {
     if (res.success) {
       console.log("Success", res);
       const elementSuccess = document.createElement("h3");
-      elementSuccess.textContent = "Enviado ✨"
+      elementSuccess.textContent = "Enviado ✨";
       formSuccess?.appendChild(elementSuccess);
     }
   };
 
   return (
     <section className="contact-container" id="contact">
-      <h1 className="title-hover">Entre em contato por aqui <i className="bi bi-arrow-down"></i></h1>
+      <h1 className="title-hover">
+        Entre em contato por aqui <i className="bi bi-arrow-down"></i>
+      </h1>
       <form className="form-styled" id="form" onSubmit={onSubmit}>
         <h4>Nome:</h4>
-        <input className="input" type="text" name="name" placeholder="Enter your name" required/>
+        <input
+          className="input"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
         <h4>Email:</h4>
-        <input className="input" type="email" name="email" placeholder="Enter your email" required/>
+        <input
+          className="input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
         <h4>Mensagem:</h4>
-        <textarea className="input" name="message" placeholder="Enter your message" required></textarea>
-        <div id="formSuccess">
-
+        <textarea
+          className="input"
+          name="message"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <div id="formSuccess"></div>
+        <button
+          className="input"
+          type="submit"
+          title="Submit for sent an email"
+        >
+          Enviar
+        </button>
+        <div className="drops">
+          <div className="drop drop-1"></div>
+          <div className="drop drop-2"></div>
+          <div className="drop drop-3"></div>
+          <div className="drop drop-4"></div>
+          <div className="drop drop-5"></div>
         </div>
-        <button className="input" type="submit" title="Submit for sent an email">Enviar</button>
       </form>
     </section>
   );
