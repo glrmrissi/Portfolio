@@ -1,4 +1,5 @@
 import MyPhoto from "../../assets/icons/me.png";
+import Curri from "../../assets/downloads/curriculo.pdf";
 
 const ResumeSection = () => {
   return (
@@ -31,7 +32,7 @@ const ResumeSection = () => {
                 className="bi bi-arrow-down-square theme-icon"
                 title="Curriculo"
               ></i>
-              <a className="download-btn" href="src/assets/downloads/curriculo.pdf" download={true}>
+              <a className="download-btn" href={Curri} download={true}>
                 Download CV
               </a>
             </button>
