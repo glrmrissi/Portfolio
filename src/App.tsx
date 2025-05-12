@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import TopBtn from "./components/TopBtn/TopBtn";
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   
@@ -20,6 +21,8 @@ function App() {
       <Projects></Projects>
 
       <Contact></Contact>
+      
+      <Footer></Footer>
       
       <TopBtn></TopBtn>
     </>

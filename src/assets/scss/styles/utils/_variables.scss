@@ -15,8 +15,8 @@ $themes: (
     background-main-skills: #101010,
     background-skills-card: #2b2b2b,
     dark-font-color: #fff,
-    dark-font-color-hover: #f23219,
-    title-decals-color: #d1321c,
+    dark-font-color-hover: #f21919,
+    title-decals-color: #d11c1c,
     font-color-main: #ffffff,
     path-rectangle: url("../../assets/icons/rectangle.png"),
     background-path-image: url("../../assets/imgs/backgroundRed.jpg"),
@@ -25,7 +25,7 @@ $themes: (
     card-hover-2: #20020191,
     card-hover-3: #2202014d,
     slider-border: #fff,
-    slider-border-hover: #f23219,
+    slider-border-hover: #f21919,
     slider-background-btns: #101010,
     slider-background-hover: #1d1d1d,
     slider-background-backend: url("../../assets/imgs/sliderImgs/backend1.png"),
@@ -37,6 +37,8 @@ $themes: (
     background-form-color: #0b0b0b,
     button-form-color-hover: #282828,
     background-contact-forms: url("../../assets/imgs/formsImgs/backDark.png"),
+    wave-color: #d11c1c,
+    wave-color-2: #9b1010,
   ),
   light: (
     background-main: #fff,
@@ -66,6 +68,8 @@ $themes: (
     background-form-color: #f3f3f3,
     button-form-color-hover: #eeeeee,
     background-contact-forms: url("../../assets/imgs/formsImgs/backWhite.png"),
+    wave-color: #5b1cd1,
+    wave-color-2: #4615a1,
   ),
 );
 @mixin theme($theme-name) {
