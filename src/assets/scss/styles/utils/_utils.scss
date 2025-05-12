@@ -69,3 +69,40 @@ a {
     }
   }
 }
+
+.wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: var(--wave-color);
+    overflow: hidden;
+}
+
+.wave::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-color: var(--wave-color-2);
+    border-radius: 50%;
+    animation: wave 7s infinite cubic-bezier(0.45, 0, 0.58, 1);
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
