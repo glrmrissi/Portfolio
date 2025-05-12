@@ -31,7 +31,7 @@ const ResumeSection = () => {
                 className="bi bi-arrow-down-square theme-icon"
                 title="Curriculo"
               ></i>
-              <a className="download-btn" href="../../assets/downloads/curriculo.pdf" download={true}>
+              <a className="download-btn" href="src/assets/downloads/curriculo.pdf" download={true}>
                 Download CV
               </a>
             </button>
